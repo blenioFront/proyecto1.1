@@ -16,7 +16,7 @@
   <body>
     <!-- Aquí empieza el encabezado principal que se mantendrá en todas las páginas de nuestro sitio web -->
 
-    <header>
+    <section>
       
 
       <!-- Aunque no es obligatorio, es una práctica común incluir el apartado menú de navegación dentro del encabezado de la página -->
@@ -27,39 +27,40 @@
           <li><a href="#proyectos">Proyectos</a></li>          
           <li><a href="#contacto">Contacto</a></li>
         </ul>
+        <div class="portada">
+          <img src="./imagenes/perfil.png" alt="mi imagen">
+            <h3>John Snow</h3>
+            <span>Desarrollador Full Stack</span>
+        </div>
 
         
       </nav>
-    </header>
+    </section>
 
     <!-- Aquí empieza el contenido principal de nuestra página -->
-    <main>
-      <section>  
+    
+      
       <!-- Incluimos un artículo -->
         <article id="SobreMi">
             <h2>Sobre mi</h2>
-            <img src="./imagenes/perfil.png" alt="mi imagen">
-            <h3>John Snow</h3>
-            <span>Desarrollador Full Stack</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolores exercitationem, dolorem earum architecto similique qui ex numquam necessitatibus ad harum accusantium neque placeat asperiores adipisci non sint a nobis?</p>
             
 
             
         </article>
 
         <article id="proyectos">
+          <div class="proyectoTitulo">
             <h2>Proyectos</h2>
+            <h3>Ultimos Trabajos</h3>
+          </div>  
+          
 
-            <div class="proyecto">
+            <div class="proyectoImagenes">
                 <img src="./imagenes/proyecto1.jpg" alt="proyecto1">
-                <p>Proyecto 1</p>
-            </div>
-            <div class="proyecto">
                 <img src="./imagenes/proyecto2.png" alt="proyecto2">
-                <p>Proyecto 2</p>
-            </div>
-            <div class="proyecto">
                 <img src="./imagenes/proyecto3.png" alt="proyecto3">
-                <p>Proyecto 3</p>
+                
             </div>  
 
             
@@ -70,22 +71,24 @@
 
             <form action="" method="post">
 
-                <label for="nombre">Ingrese nombre</label>
+                <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" id="">
-                <label for="email">Ingrese Email</label>
+                <label for="email">Email</label>
                 <input type="email" name="email" id="">
-                <label for="consulta">Ingrese Consulta</label>
-                <textarea name="consulta" id="" cols="30" rows="10"></textarea>
+                <label for="asunto">Asunto</label>
+                <input type="text" name="asunto" id="">
+                <label for="Mensaje">Mensaje</label>
+                <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
                 <button type="submit">Enviar</button>
 
             </form>
 
             
         </article>
-      </section>
+      
       
 
-    </main>
+    
 
     <!-- Y aquí está el pie de página principal que utilizaremos en todas las páginas de nuestro sitio web -->
 
